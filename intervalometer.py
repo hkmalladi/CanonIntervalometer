@@ -41,6 +41,7 @@ def start_capture():
     for shot in range(0, num_shots):
         bulb_shoot(shutter_speed)
         time.sleep(5)
+        text.delete(1.0,END)
         text.insert(END, 'Done Shooting sub ' + str(shot + 1) + '\n')
         text.update()
 #        B.config(text = 'Shooting sub ' + str(shot))
@@ -156,7 +157,7 @@ B3.pack( anchor = W)
 
 
 textframe = Frame(root)
-text = Text(textframe)
+text = Text(textframe, height = 1, width = 25)
 text.pack()
 textframe.pack()
 
