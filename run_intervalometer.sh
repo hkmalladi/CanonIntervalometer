@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 /home/astroberry/intervalometer.py
+python3 ~/CanonIntervalometer/intervalometer.py
