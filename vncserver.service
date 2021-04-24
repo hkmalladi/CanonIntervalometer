@@ -1,0 +1,14 @@
+
+
+[Unit]
+Description=VNC server
+After=vncserver
+
+[Service]
+Type=forking
+User=hkmalladi
+ExecStart=vncserver
+ExecStop=vncserver -kill :1
+
+[Install]
+WantedBy=multi-user.target
